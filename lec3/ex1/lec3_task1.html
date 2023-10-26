@@ -6,14 +6,14 @@
     <title>Lecture3 Task1</title>
 </head>
 <body>
-    <form method="post" action="https://www.google.com.eg/?hl=ar">
+    <form method="get" action="task3.php">
         <table  cellspacing="12">
             <tr>
                 <td>
                     <label for="name">Name : </label>
                 </td>
                 <td>
-                    <input type="text" size="20" >
+                    <input type="text" size="20" required="required" >
                 </td>
             </tr>
             <tr>
@@ -21,7 +21,7 @@
                     <label for="adress">Address : </label>
                 </td>
                 <td>
-                    <input type="text" size="20" id="address" >
+                    <input type="text" size="20" id="address" required="required" >
                 </td>
             </tr>
             <tr>
@@ -29,7 +29,7 @@
                     <label for="city">City : </label>
                 </td>
                 <td>
-                    <input type="text" size="20" id="city" >
+                    <input type="text" size="20" id="city" required="required">
                 </td>
             </tr>
             <tr>
@@ -37,7 +37,7 @@
                     <label for="state">State : </label>
                 </td>
                 <td>
-                    <input type="text" size="20" id="state" >
+                    <input type="text" size="8" id="state" required="required">
                 </td>
             </tr>
             <tr>
@@ -45,7 +45,7 @@
                     <label for="zip">ZIP : </label>
                 </td>
                 <td>
-                    <input type="text" size="20" id="zip" >
+                    <input type="text" size="8" id="zip" required="required" >
                 </td>
             </tr>  
             <tr>
@@ -54,7 +54,7 @@
                 </td>
                 <td>
                     <select id="magazine" >
-                        <option value="newsweek" selected = "selected">NewsWeek</option>
+                        <option value="newsweek"  selected = "selected">NewsWeek</option>
                         <option value="newsweek" >DesinNews</option>
                         <option value="newsweek" >Fashion</option>
                         <option value="newsweek" >Gaza</option>
@@ -67,7 +67,7 @@
                    Subscription : 
                 </td>
                 <td>
-                    <input type="radio" id="1" name="sub" value="1year" >
+                    <input type="radio" id="1" name="sub"  value="1year" checked="checked">
                     <label for="1">1 year</label>
 
                     <input type="radio" id="2" name="sub" value="2years" >
